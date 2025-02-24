@@ -49,8 +49,7 @@ const Header = () => {
   </div>
 
 
-          {/* ✅ Botón para cambiar el tema */}
-          <div className={styles.toggleSwitch}>
+  <div className={styles.toggleSwitch}>
             <input
               type="checkbox"
               id="darkModeToggle"
@@ -60,7 +59,6 @@ const Header = () => {
             />
             <label htmlFor="darkModeToggle" className={styles.toggleSwitchLabel}>
               <span className={styles.toggleSwitchInner} />
-              <span className={styles.toggleSwitchSwitch} />
             </label>
           </div>
 

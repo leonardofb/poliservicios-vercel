@@ -1,19 +1,18 @@
-/* VideoSection.module.css */
-
-/*--/w3l-video--*/
+/* Estilos para VideoSection */
 .videoSection {
-    margin-bottom: -140px;
+    margin-bottom: -80px;
 }
 
 .index5 {
     background: url(../../src/assets/images/banner3.jpg) no-repeat center;
-    background-size: cover;
+    background-size: contain;  /* La imagen se ajusta a la pantalla sin deformarse */
+    background-position: center; /* Asegura que la imagen esté centrada */
     z-index: 0;
     position: relative;
     display: grid;
     align-items: center;
     border-radius: var(--border-radius);
-    height: 100vh;
+    height: 80vh;
 }
 
 .index5::before {
@@ -29,22 +28,32 @@
 }
 
 .abpageContent {
-    max-width: 800px;
+    max-width: 500px;
     margin-right: 0;
 }
 
 .middleSection h2 {
     font-size: 45px;
-    line-height: 55px;
-    font-weight: 700;
+    line-height: 20px;
+    font-weight: 500;
 }
-
 .index5 p,
 .vhnyPara {
     color: #fff;
     opacity: 0.8;
 }
 
+/* Estilos para el video */
+.video {
+    max-width: 35%;  /* Ajusta el video al 80% del ancho de su contenedor */
+    height: auto;    /* Mantiene la proporción del video */
+    margin:  auto;  /* Centrado horizontal */
+    display: block;  /* Asegura que el video sea un bloque */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega sombra sutil */
+}
+
+/* Si necesitas animación para el icono de play, puedes mantenerlo, pero no es necesario aquí. */
 .videoPlayIcon {
     border: transparent;
     width: 85px;
@@ -72,11 +81,11 @@
 }
 
 .faPlay {
-    line-height: 55px;
+    line-height: 20px;
 }
 
 .playView {
     left: 0;
     right: 0;
-    top: calc(50% - 40px);
+    top: calc(80% - 40px);
 }
