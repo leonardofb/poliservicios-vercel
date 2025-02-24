@@ -1,3 +1,6 @@
+
+
+
 .index5 {
   background: url(../../src/assets/images/banner3.jpg) no-repeat center;
   background-size: cover;
@@ -248,6 +251,11 @@ a:hover {
 /* 🌙 Estilos específicos para modo oscuro */
 :global([data-theme="dark"]) .header {
   background-color: #1a1a1a !important; /* Fondo oscuro */
+}
+
+:global([data-theme="dark"]) .header {
+  background-color: #1a1a1a !important; /* Fondo oscuro */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra adicional */
 }
 
 :global([data-theme="dark"]) .brand {

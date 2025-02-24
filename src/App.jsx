@@ -10,6 +10,7 @@ import Home from "./components/Home";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
+import ImagenesIA from "./components/ImagenesIA"; // Importa el nuevo componente
 
 // ✅ Detectamos si estamos en GitHub Pages
 const isProduction = process.env.NODE_ENV === "production";
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/imagenesIA" element={<ImagenesIA />} /> {/* Ruta para el componente IA */}
         </Routes>
         <Footer />
       </Router>

@@ -28,28 +28,31 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-      <nav className={styles.navbar}>
-  <NavLink to="/">
-    <img src={logo} alt="Poliservicios" className={styles.logo} />
-  </NavLink>
+        <nav className={styles.navbar}>
+          <NavLink to="/">
+            <img src={logo} alt="Poliservicios" className={styles.logo} />
+          </NavLink>
 
-  <div className={styles.navLinks}>
-    <NavLink to="/" className={({ isActive }) => isActive ? `${styles.active} ${styles.navLink}` : styles.navLink}>
-      Home
-    </NavLink>
-    <NavLink to="/about" className={({ isActive }) => isActive ? `${styles.active} ${styles.navLink}` : styles.navLink}>
-      About
-    </NavLink>
-    <NavLink to="/services" className={({ isActive }) => isActive ? `${styles.active} ${styles.navLink}` : styles.navLink}>
-      Services
-    </NavLink>
-    <NavLink to="/contact" className={({ isActive }) => isActive ? `${styles.active} ${styles.navLink}` : styles.navLink}>
-      Contact
-    </NavLink>
-  </div>
+          <div className={styles.navLinks}>
+            <NavLink to="/" className={({ isActive }) => isActive ? `${styles.active} ${styles.navLink}` : styles.navLink}>
+              Home
+            </NavLink>
+            <NavLink to="/about" className={({ isActive }) => isActive ? `${styles.active} ${styles.navLink}` : styles.navLink}>
+              About
+            </NavLink>
+            <NavLink to="/services" className={({ isActive }) => isActive ? `${styles.active} ${styles.navLink}` : styles.navLink}>
+              Services
+            </NavLink>
+            <NavLink to="/contact" className={({ isActive }) => isActive ? `${styles.active} ${styles.navLink}` : styles.navLink}>
+              Contact
+            </NavLink>
+            {/* Nuevo Botón */}
+            <NavLink to="/ImagenesIA" className={({ isActive }) => isActive ? `${styles.active} ${styles.navLink}` : styles.navLink}>
+              Imagenes IA
+            </NavLink>
+          </div>
 
-
-  <div className={styles.toggleSwitch}>
+          <div className={styles.toggleSwitch}>
             <input
               type="checkbox"
               id="darkModeToggle"
@@ -61,7 +64,6 @@ const Header = () => {
               <span className={styles.toggleSwitchInner} />
             </label>
           </div>
-
         </nav>
       </div>
     </header>
