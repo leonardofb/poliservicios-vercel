@@ -13,8 +13,7 @@ const Home = () => {
   return (
     <div className={styles.home}> {/* Se aplica el estilo desde CSS Modules */}
       <div className={styles.container}>
-      <MainSlider />
-        
+          
         <MainSlider />
         <Grids3 />
         <About />

@@ -8,7 +8,7 @@ const Banner = () => {
         <h3>
           Bienvenido a <span>PoliServicioss baner</span>
         </h3>
-        <p>Soluciones tecnológicas para tu negocio</p>
+        <p>Soluciones tecnológicas para tu negociosssssssssssssss</p>
         <button className={styles.readMore}>Conócenos</button>
       </div>
     </section>

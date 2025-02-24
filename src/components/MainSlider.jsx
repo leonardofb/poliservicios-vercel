@@ -16,7 +16,7 @@ const MainSlider = () => {
                 </h3>
                 <div className={styles.bannerInfoTop}>
                   <p>
-                    Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula.
+                    Estoy parado en main slaider por primera vez.
                   </p>
                   <Link to="/about" className="btn btn-style btn-outline-light mt-sm-5 mt-4">
                     Leer Más <span className="fas fa-angle-double-right ms-2"></span>

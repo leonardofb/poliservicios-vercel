@@ -8,6 +8,11 @@
   z-index: 1000;
   padding: 1rem 0;
 }
+.logo {
+  height: 50px;  /* Ajusta la altura según sea necesario */
+  width: auto;   /* Mantiene la proporción */
+  display: block;
+}
 
 .header.scrolled {
   background: black;
