@@ -1,30 +1,35 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import path from "path"; // ✅ Se importa `path` correctamente
+import path from "path";
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.NODE_ENV === "production" ? "/poliservicios/" : "/", // ✅ Ajuste automático para GitHub Pages
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "src"), // ✅ Permite importar con "@/ruta"
+    },
+  },
+  base: process.env.NODE_ENV === "production" ? "/poliservicios/" : "/", // ✅ Para GitHub Pages
   build: {
     outDir: "dist",
     assetsDir: "assets",
     rollupOptions: {
       input: {
-        main: path.resolve(__dirname, "index.html"), // ✅ Corrige `resolve` correctamente
+        main: path.resolve(__dirname, "index.html"),
       },
       output: {
         assetFileNames: (assetInfo) => {
           if (/\.(png|jpe?g|svg|gif|webp)$/.test(assetInfo.name)) {
-            return "assets/images/[name][extname]"; // ✅ Carpeta de imágenes
+            return "assets/images/[name][extname]"; // ✅ Organiza imágenes
           }
           if (/\.(woff|woff2|ttf|otf)$/.test(assetInfo.name)) {
-            return "assets/fonts/[name][extname]"; // ✅ Carpeta de fuentes
+            return "assets/fonts/[name][extname]"; // ✅ Organiza fuentes
           }
           if (assetInfo.name?.endsWith(".css")) {
-            return "assets/css/[name]-[hash][extname]"; // ✅ Mantiene CSS organizado
+            return "assets/css/[name]-[hash][extname]"; // ✅ Organiza CSS
           }
           if (assetInfo.name?.endsWith(".js")) {
-            return "assets/js/[name]-[hash][extname]"; // ✅ Mantiene JS organizado
+            return "assets/js/[name]-[hash][extname]"; // ✅ Organiza JS
           }
           return "assets/[name]-[hash][extname]"; // ✅ Otros archivos
         },

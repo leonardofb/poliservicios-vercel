@@ -22,7 +22,7 @@ const ServicesSection = () => {
                             <div className="cwp23-text-cols">
                                 {['g2.jpg', 'g3.jpg', 'g4.jpg', 'g5.jpg'].map((img, index) => (
                                     <div className="column" key={index}>
-                                        <a href="#"><img src={`assets/images/${img}`} alt="" className="radius-image img-fluid" /></a>
+                                        <a href="#"><img src={`../../src/assets/images/${img}`} alt="" className="radius-image img-fluid" /></a>
                                     </div>
                                 ))}
                             </div>

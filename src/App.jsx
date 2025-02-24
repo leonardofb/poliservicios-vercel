@@ -7,7 +7,6 @@ import Services from "./components/Services";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
-import Banner from "./components/Banner"; 
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
@@ -24,7 +23,7 @@ const App = () => {
     <ThemeProvider>
       <Router basename={basename}> {/* ✅ Solo si es GitHub Pages */}
         <Header />
-        <Banner />
+        
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

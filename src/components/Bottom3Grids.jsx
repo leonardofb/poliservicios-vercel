@@ -1,7 +1,7 @@
 import React from "react";
-import g1 from "../assets/images/g1.jpg";
-import g2 from "../assets/images/g2.jpg";
-import g3 from "../assets/images/g3.jpg";
+import g1 from "../../src/assets/images/g1.jpg";
+import g2 from "../../src/assets/images/g2.jpg";
+import g3 from "../../src/assets/images/g3.jpg";
 
 const Bottom3Grids = () => {
   const grids = [

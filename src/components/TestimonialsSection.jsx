@@ -6,13 +6,13 @@ const testimonials = [
         name: "John Wilson",
         city: "Example City",
         quote: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.",
-        img: "assets/images/team1.jpg"
+        img: "../../src/assets/images/team1.jpg"
     },
     {
         name: "Julia Sakura",
         city: "Example City",
         quote: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.",
-        img: "assets/images/team2.jpg"
+        img: "../../src/assets/images/team2.jpg"
     }
 ];
 

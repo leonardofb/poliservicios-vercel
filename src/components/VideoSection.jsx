@@ -10,7 +10,7 @@ const VideoSection = () => {
                         <div className="position-relative py-5 my-lg-5">
                             {/* Video en lugar del enlace externo */}
                             <video width="30%" controls>
-                                <source src="assets/videos/mivideo.mp4" type="video/mp4" />
+                                <source src="assets/videos/mivideo.mp4" type="../../src/assets/videos/mivideo.mp4" />
                             </video>
                         </div>
                     </div>

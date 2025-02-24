@@ -4,19 +4,19 @@ import styles from './Grids3.module.css';
 const Grids3 = () => {
     const services = [
         { 
-            img: 'assets/images/aileo.jpg', 
+            img: '../../src/assets/images/aileo.jpg', 
             category: 'Seguridad y Conectividad', 
             title: 'Cámaras de Videovigilancia y Redes de Datos', 
             description: 'Protege tu hogar o negocio con videovigilancia avanzada. Instalamos y mantenemos redes de datos para una conexión estable y segura.'
         },
         { 
-            img: 'assets/images/Electricista2.jpg', 
+            img: '../../src/assets/images/Electricista2.jpg', 
             category: 'Servicios Eléctricos', 
             title: 'Soluciones Eléctricas Profesionales', 
             description: 'Diagnóstico y reparación de fallas eléctricas. Instalaciones seguras y optimización de redes para evitar fallos inesperados.' 
         },
         { 
-            img: 'assets/images/g3.jpg', 
+            img: '../../src/assets/images/g3.jpg', 
             category: 'Automatización Inteligente', 
             title: 'Automatización para Hogares y Negocios', 
             description: 'Controla luces, puertas y dispositivos con un solo clic. Mejora la eficiencia y seguridad con tecnología inteligente.' 
