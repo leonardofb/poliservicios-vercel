@@ -1,0 +1,294 @@
+
+
+
+.index5 {
+  background: url(../../src/assets/images/banner3.jpg) no-repeat center;
+  background-size: cover;
+  z-index: 0;
+  position: relative;
+  display: grid;
+  align-items: center;
+  border-radius: var(--border-radius);
+  height: 100vh;  /* Fondo de pantalla completo */
+}
+
+/* Fondo oscuro con opacidad para mejorar la legibilidad del texto */
+.index5::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);  /* Capa oscura para hacer el texto más legible */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  border-radius: var(--border-radius);
+}
+
+/* Estilos para el texto */
+.middleSection h2 {
+  font-size: 45px;
+  line-height: 55px;
+  font-weight: 700;
+  color: #fff;  /* Texto blanco */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);  /* Sombra de texto para mayor contraste */
+}
+
+/* Texto de párrafos */
+.index5 p,
+.vhnyPara {
+  color: #fff;
+  opacity: 0.8;
+  font-size: 18px;
+}
+
+/* Estilo para los botones */
+.button {
+  background-color: #f5a623;  /* Color de fondo del botón */
+  color: white;  /* Color de texto blanco */
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: #e67e22;  /* Cambio de color al pasar el mouse */
+}
+
+/* Estilo para los iconos de Font Awesome en botones */
+.button i {
+  margin-right: 8px;
+}
+
+/* Enlaces estilizados */
+a {
+  color: #f5a623;  /* Color de enlace */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+a:hover {
+  color: #e67e22;  /* Color al pasar el mouse */
+}
+
+
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
+  transition: background-color 0.3s, color 0.3s;
+  z-index: 1000;
+  padding: 1rem 0;
+}
+
+.header.scrolled {
+  background: black;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Logo */
+.logo {
+  height: 50px;  /* Ajusta la altura según sea necesario */
+  width: auto;   /* Mantiene la proporción */
+  display: block;
+}
+
+.brand {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white; /* Blanco */
+  transition: color 0.3s ease-in-out;
+}
+
+.brand:hover {
+  color: #6e6e6e; /* Gris oscuro al pasar el mouse */
+}
+
+
+/* Parte roja del logo */
+.red {
+  color: #eb291b; /* Rojo intenso */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Separa logo y menú */
+  align-items: center;
+  padding: 0,2rem; /* Ajusta los márgenes laterales */
+  
+}
+
+
+.navLinks {
+  display: flex;
+  gap: 1.5rem; /* Espaciado entre los enlaces */
+  align-items: center;
+  flex-grow: 1; /* Para que los enlaces se expandan en el contenedor */
+}
+
+
+/* General */
+/* Botón general */
+.nav-link {
+  background-image: linear-gradient(90deg, #b22222, #ff6347); /* 🔴 Gradiente rojo */
+  color: white !important;
+  font-weight: bold;
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  padding: 0.6rem 1.2rem;
+  border-radius:10px;
+  display: inline-block;
+  text-align: center;
+  border: none;
+  text-decoration: none !important;
+  transition: background-position 0.4s ease, transform 0.3s ease;
+  background-size: 200% 100%;
+  background-position: right bottom;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto al pasar el mouse */
+.nav-link:hover {
+  background-position: left bottom; /* 💨 Desliza de izquierda a derecha */
+  transform: translateY(-3px); /* 🧲 Eleva el botón un poco al pasar */
+}
+
+/* Activo - Botón se queda azul */
+.nav-link:focus,
+.nav-link.active {
+  background-color: #0d6efd !important;
+  color: white !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Para modo oscuro */
+
+
+/* General */
+.toggleSwitch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+
+/* El checkbox oculto que controla el cambio */
+.toggleSwitchCheckbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Estilos del toggle switch */
+.toggleSwitchLabel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50px;
+  background: linear-gradient(45deg, #ff6347, #0d6efd); /* Gradiente suave entre naranja y azul */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s ease-in-out;
+}
+
+/* Estilos internos del botón */
+.toggleSwitchInner {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: white;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Efecto de transformación cuando está activado (modo oscuro) */
+.toggleSwitchCheckbox:checked + .toggleSwitchLabel .toggleSwitchInner {
+  transform: translateX(26px); /* Desplaza el botón hacia la derecha */
+  background: #333; /* Fondo oscuro cuando activado */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilos del switch en modo oscuro */
+:global([data-theme="dark"]) .toggleSwitchLabel {
+  background: linear-gradient(45deg, #0d6efd, #4e73df); /* Gradiente con tono más azul en modo oscuro */
+}
+
+
+:global([data-theme="dark"]) .nav-link {
+  background-image: linear-gradient(90deg, #333333, #444444); /* 🌑 Gradiente oscuro */
+  color: white !important;
+}
+
+:global([data-theme="dark"]) .nav-link:hover {
+  background-image: linear-gradient(90deg, #0d6efd, #1e90ff); /* 💠 Gradiente azul al pasar */
+  transform: translateY(-3px); /* 🧲 Eleva el botón un poco al pasar */
+}
+
+/* 🌙 Estilos específicos para modo oscuro */
+:global([data-theme="dark"]) .header {
+  background-color: #1a1a1a !important; /* Fondo oscuro */
+}
+
+:global([data-theme="dark"]) .header {
+  background-color: #1a1a1a !important; /* Fondo oscuro */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra adicional */
+}
+
+:global([data-theme="dark"]) .brand {
+  color: #ffffff; /* Texto blanco */
+}
+
+:global([data-theme="dark"]) .nav-link {
+  background-color: #ff6347 !important; /* 🔥 Rojo más vivo */
+  color: black !important; /* Texto negro */
+}
+:global([data-theme="dark"]) .nav-link:hover,
+:global([data-theme="dark"]) .nav-link:focus {
+  background-color: #87cefa !important; /* 💠 Azul claro */
+  color: black !important;
+}
+
+.darkModeButton {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
