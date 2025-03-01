@@ -1,3 +1,4 @@
+///este codigo trabaja es con OPEANAI
 import React, { useState } from "react";
 import styles from "./ImagenesIA.module.css"; // Importar estilos
 
