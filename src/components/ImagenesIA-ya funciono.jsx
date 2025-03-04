@@ -5,7 +5,7 @@ import styles from "./ImagenesIA.module.css"; // Importar estilos
 const ImagenesIA = () => {
   const [prompt, setPrompt] = useState(""); // Estado para el prompt
   const [imageUrl, setImageUrl] = useState(""); // Estado para la imagen generada
-  const API_KEY = "sk-vjzEIKIrYI5XfRdZtLev8lj7IU14dcIUnBltajoNJYpdsjR3"; // Reemplázala con tu API Key real
+ // const API_KEY = "";  Reemplázala con tu API Key real
 
   const generarImagen = async () => {
     if (!prompt) {

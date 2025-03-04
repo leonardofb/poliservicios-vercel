@@ -9,9 +9,7 @@ const ImagenesIA = () => {
   const [seed, setSeed] = useState(0);
   const [outputFormat, setOutputFormat] = useState("jpeg");
   const [imageUrl, setImageUrl] = useState("");
-
-  const API_KEY = "sk-vjzEIKIrYI5XfRdZtLev8lj7IU14dcIUnBltajoNJYpdsjR3"; // Reemplázala con tu API Key real
-
+ // const API_KEY = "";  Reemplázala con tu API Key real
   const generarImagen = async () => {
     if (!prompt) {
       alert("Por favor ingresa un prompt.");
