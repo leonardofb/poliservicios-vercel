@@ -12,11 +12,11 @@ const Contact = () => {
                     <div className="container">
                         <div className="header-title text-center">
                             <h6 className="title-subhny"><span>¡Hablemos!</span></h6>
-                            <h3 className="title-w3l mb-2">Let’s Talk About
-                                <span className="span-bold"> Your Project</span>
+                            <h3 className="title-w3l mb-2">Hablemos de 
+                                <span className="span-bold"> Tu proyecto</span>
                             </h3>
-                            <p className="mb-sm-5 mb-4">Start working with us that can provide everything you need to generate awareness,
-                                drive traffic, connect. <br /> We guarantee that you’ll be able to have any issue resolved within 24 hours.
+                            <p className="mb-sm-5 mb-4">Empiece a trabajar con nosotros, que podemos proporcionarle todo lo que necesita para generar conciencia,
+                            generar tráfico y conectar. .<br /> Le garantizamos que podrá resolver cualquier problema en 24 horas.
                             </p>
                         </div>
                         <ContactForm /> {/* Componente del formulario de contacto */}

@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="footer-29 py-5">
                 <div className="container py-lg-4">
                     <div className="row align-items-center mb-3">
-                        <h2 className="sign-left col-lg-7">Join our community by using our services and grow your business.</h2>
+                        <h2 className="sign-left col-lg-7">Únase a nuestra comunidad utilizando nuestros servicios y haga crecer su negocio.LF</h2>
                         <div className="footerw3-btn col-lg-5 ps-lg-5">
                             <a href="#" className="btn btn-secondary btn-style">Try it For Free <span className="fas fa-angle-double-right ms-2"></span></a>
                         </div>
