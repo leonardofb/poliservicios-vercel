@@ -1,9 +1,9 @@
 {
-  "name": "mipaginaweb",
+  "name": "poliservicios",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": ".",
+  "homepage": "https://leonardofb.github.io/poliservicios",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
