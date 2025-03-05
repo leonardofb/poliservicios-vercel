@@ -48,7 +48,7 @@ import { resolve } from 'path';
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.NODE_ENV === "production" ? "/poliservicios/" : "/", // ✅ Se ajusta según el entorno
+  base: process.env.NODE_ENV === "production" ? "/poliservicios/" : "/", //  Cambia "poliservicios" por el nombre correcto de tu repo en GitHub
   build: {
     outDir: "dist",
     assetsDir: "assets",
