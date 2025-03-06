@@ -7,7 +7,7 @@ import { fileURLToPath } from "url";
 const __dirname = fileURLToPath(new URL(".", import.meta.url));
 
 // Verificar si import.meta.env está disponible
-const mode = process.env.NODE_ENV || "development"; // Fallback a "development"
+const mode = import.meta.env ? import.meta.env.MODE : "development"; // Fallback a "development"
 
 export default defineConfig({
   plugins: [react()],
@@ -27,17 +27,11 @@ export default defineConfig({
         main: resolve(__dirname, "index.html"), // Ahora __dirname está bien definido
       },
       output: {
-        assetFileNames: (assetInfo) => {
-          if (/\.(css|js)$/.test(assetInfo.name)) {
-            return "assets/[name]-[hash][extname]"; // Asegura nombres correctos
-          }
-          return "assets/[name][extname]";
-        },
+        assetFileNames: "assets/[name]-[hash][extname]", // Ahora usa una cadena directa para evitar errores
       },
     },
   },
 });
-
 
 
 
