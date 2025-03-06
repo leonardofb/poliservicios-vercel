@@ -6,11 +6,14 @@ import { fileURLToPath } from "url";
 // Obtener la ruta absoluta del directorio actual
 const __dirname = fileURLToPath(new URL(".", import.meta.url));
 
+// Verificar si import.meta.env está disponible
+const mode = process.env.NODE_ENV || "development"; // Fallback a "development"
+
 export default defineConfig({
   plugins: [react()],
-
+  
   // Base correcta para GitHub Pages y local
-  base: import.meta.env.MODE === "production" ? "/poliservicios/" : "/",
+  base: mode === "production" ? "/poliservicios/" : "/",
 
   // Mantener los archivos de public/
   publicDir: "public",
