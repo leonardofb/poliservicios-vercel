@@ -1,22 +1,32 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-
 import { resolve } from "path";
+import { fileURLToPath } from "url";
+
+// Obtener la ruta absoluta del directorio actual
+const __dirname = fileURLToPath(new URL(".", import.meta.url));
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.NODE_ENV === "production" ? "/poliservicios/" : "/", // Cambia "NOMBRE-DEL-REPO" por el de tu GitHub Pages
+
+  // Base correcta para GitHub Pages y local
+  base: import.meta.env.MODE === "production" ? "/poliservicios/" : "/",
+
+  // Mantener los archivos de public/
+  publicDir: "public",
+
   build: {
     outDir: "dist",
     assetsDir: "assets",
+    emptyOutDir: true, // Limpia "dist/" antes de construir
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "index.html"),
+        main: resolve(__dirname, "index.html"), // Ahora __dirname está bien definido
       },
       output: {
         assetFileNames: (assetInfo) => {
           if (/\.(css|js)$/.test(assetInfo.name)) {
-            return "assets/[name]-[hash][extname]"; // Evita que el nombre cambie de forma inesperada
+            return "assets/[name]-[hash][extname]"; // Asegura nombres correctos
           }
           return "assets/[name][extname]";
         },
@@ -25,6 +35,44 @@ export default defineConfig({
   },
 });
 
+
+
+
+
+/*import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import { resolve } from "path";
+
+export default defineConfig({
+  plugins: [react()],
+
+  // Base correcta para GitHub Pages y local
+  base: process.env.NODE_ENV === "production" ? "/poliservicios/" : "/",
+
+  // Mantener los archivos de public/
+  publicDir: "public",
+
+  build: {
+    outDir: "dist",
+    assetsDir: "assets",
+    emptyOutDir: true, // Limpia "dist/" antes de construir
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, "index.html"),
+      },
+      output: {
+        assetFileNames: (assetInfo) => {
+          if (/\.(css|js)$/.test(assetInfo.name)) {
+            return "assets/[name]-[hash][extname]"; // Asegura nombres correctos
+          }
+          return "assets/[name][extname]";
+        },
+      },
+    },
+  },
+});
+
+*/
 
 /*import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
