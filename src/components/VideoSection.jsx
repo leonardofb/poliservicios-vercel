@@ -10,7 +10,7 @@ const VideoSection = () => {
             <div className="position-relative py-5 my-lg-5">
               {/* Video centrado con controles */}
               <video controls className={styles.video}>
-              <source src="/public/videos/mivideo.mp4" type="video/mp4" />
+              <source src="/videos/mivideo.mp4" type="video/mp4" />
 
                 Tu navegador no soporta este formato de video.
               </video>
