@@ -8,11 +8,10 @@ const VideoSection = () => {
         <div className={styles.index5}>
           <div className={`${styles.abpageContent} text-center py-5 my-lg-5`}>
             <div className="position-relative py-5 my-lg-5">
-              {/* Video centrado con controles */}
-              <video controls className={styles.video}>
+              {/* Video centrado con controles y puesto en mute*/}
+              <video controls autoPlay muted className={styles.video}> 
               <source src="/videos/mivideo.mp4" type="video/mp4" />
-
-                Tu navegador no soporta este formato de video.
+              Tu navegador no soporta este formato de video.
               </video>
             </div>
           </div>

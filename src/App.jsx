@@ -31,7 +31,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/imagenesIA" element={<ImagenesIA />} /> {/* Ruta para el componente IA */}
+          <Route path="/imagenesIA LEO" element={<ImagenesIA />} /> {/* Ruta para el componente IA */}
         </Routes>
         <Footer />
       </Router>
