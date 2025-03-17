@@ -14,18 +14,18 @@ import ImagenesIA from "./components/ImagenesIA"; // Importa el nuevo componente
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 // ✅ Detectamos si estamos en GitHub Pages
-const isProduction = process.env.NODE_ENV === "production";
-const isGitHubPages = window.location.hostname.includes("github.io");
+//const isProduction = process.env.NODE_ENV === "production";
+//const isGitHubPages = window.location.hostname.includes("github.io");
 
 // ✅ Si es GitHub Pages, usamos "/poliservicios", de lo contrario "/"
-const basename = isProduction && isGitHubPages ? "/poliservicios" : "/";
+//const basename = isProduction && isGitHubPages ? "/poliservicios" : "/";
+// colocar esto en el Router cambiarlo por el pimer <Router basename={basename}> {/* ✅ Solo si es GitHub Pages */}
 
 const App = () => {
   return (
     <ThemeProvider>
-      <Router basename={basename}> {/* ✅ Solo si es GitHub Pages */}
-        <Header />
-        
+      <Router> {/* ✅ Solo si es GitHub Pages <Router basename={basename}>*/}
+        <Header />        
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
