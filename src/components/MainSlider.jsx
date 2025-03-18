@@ -12,11 +12,11 @@ const MainSlider = () => {
               <div className={styles.bannerInfo}>
                 <h3>
                 "Tecnología Inteligente"
-                  <span>  para un Mundo Conectado</span>
+                  <span> para un Mundo Conectado</span>
                 </h3>
                 <div className={styles.bannerInfoTop}>
                   <p>
-                  Automatización, seguridad y mantenimiento con soluciones avanzadas en inteligencia artificial y tecnología de vanguardia.
+                  Automatización, seguridad y mantenimiento con soluciones avanzadas en inteligencia artificial y tecnología de vanguardia....
                   </p>
                   <Link to="/about" className="btn btn-style btn-outline-light mt-sm-5 mt-4">
                     Leer Más <span className="fas fa-angle-double-right ms-2"></span>
