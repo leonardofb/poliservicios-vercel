@@ -23,16 +23,16 @@ const Services = () => {
                     <div className="col-lg-6">
                         <div className={styles.imageGrid}>
                             <div className={styles.column}>
-                                <a href="#"><img src="../../src/assets/images/g2.jpg" alt="" /></a>
+                                <a href="#"><img src="/images/g2.jpg" alt="" /></a>
                             </div>
                             <div className={styles.column}>
-                                <a href="#"><img src="../../src/assets/images/g3.jpg" alt="" /></a>
+                                <a href="#"><img src="/images/g3.jpg" alt="" /></a>
                             </div>
                             <div className={styles.column}>
-                                <a href="#"><img src="../../src/assets/images/g4.jpg" alt="" /></a>
+                                <a href="#"><img src="/images/g4.jpg" alt="" /></a>
                             </div>
                             <div className={styles.column}>
-                                <a href="#"><img src="../../src/assets/images/g5.jpg" alt="" /></a>
+                                <a href="#"><img src="/images/g5.jpg" alt="" /></a>
                             </div>
                         </div>
                     </div>

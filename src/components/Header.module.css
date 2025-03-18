@@ -2,7 +2,7 @@
 
 
 .index5 {
-  background: url(../../src/assets/images/banner3.jpg) no-repeat center;
+  background: url(/images/banner3.jpg) no-repeat center;
   background-size: cover;
   z-index: 0;
   position: relative;

@@ -4,7 +4,7 @@
 }
 
 .index5 {
-    background: url(../../src/assets/images/banner3.jpg) no-repeat center;
+    background: url(/images/banner3.jpg) no-repeat center;
     background-size: contain;  /* La imagen se ajusta a la pantalla sin deformarse */
     background-position: center; /* Asegura que la imagen esté centrada */
     z-index: 0;

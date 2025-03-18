@@ -18602,7 +18602,7 @@ p.inner-page-para {
 }
 /*--/w3l-services3--*/
 .w3l-services3 .new-block {
-  background: url(/images/banner3.jpg) no-repeat center;
+  background: url(../images/banner3.jpg) no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;

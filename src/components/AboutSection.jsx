@@ -9,7 +9,7 @@ const AboutSection = () => {
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="w3shape position-relative">
-                                <img src="../../src/assets/images/ab1.jpg" alt="" className="radius-image img-fluid" />
+                                <img src="/images/ab1.jpg" alt="" className="radius-image img-fluid" />
                             </div>
                         </div>
                         <div className="col-lg-6 mt-lg-0 mt-md-5 mt-4 align-self ps-lg-5">
