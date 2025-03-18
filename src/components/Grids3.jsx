@@ -1,22 +1,27 @@
 import React from 'react';
 import styles from './Grids3.module.css';
 
+// Importar imágenes directamente
+import aileo from '../assets/images/aileo.jpg';
+import electricista from '../assets/images/Electricista2.jpg';
+import g3 from '../assets/images/g3.jpg';
+
 const Grids3 = () => {
     const services = [
         { 
-            img: require('../assets/images/aileo.jpg'), 
+            img: aileo, 
             category: 'Seguridad y Conectividad', 
             title: 'Cámaras de Videovigilancia y Redes de Datos', 
             description: 'Protege tu hogar o negocio con videovigilancia avanzada. Instalamos y mantenemos redes de datos para una conexión estable y segura.'
         },
         { 
-            img: require('../assets/images/Electricista2.jpg'), 
+            img: electricista, 
             category: 'Servicios Eléctricos', 
             title: 'Soluciones Eléctricas Profesionales', 
             description: 'Diagnóstico y reparación de fallas eléctricas. Instalaciones seguras y optimización de redes para evitar fallos inesperados.' 
         },
         { 
-            img: require('../assets/images/g3.jpg'), 
+            img: g3, 
             category: 'Automatización Inteligente', 
             title: 'Automatización para Hogares y Negocios', 
             description: 'Controla luces, puertas y dispositivos con un solo clic. Mejora la eficiencia y seguridad con tecnología inteligente.' 
@@ -51,6 +56,3 @@ const Grids3 = () => {
 };
 
 export default Grids3;
-
-
-
