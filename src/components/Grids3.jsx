@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './Grids3.module.css';
 
-// Importar imágenes directamente
-import aileo from '../assets/images/aileo.jpg';
-import electricista from '../assets/images/Electricista2.jpg';
-import g3 from '../assets/images/g3.jpg';
+// Usar rutas absolutas si las imágenes están en "public/images/"
+const aileo = "/images/aileo.jpg";
+const electricista = "/images/Electricista2.jpg";
+const g3 = "/images/g3.jpg";
 
 const Grids3 = () => {
     const services = [

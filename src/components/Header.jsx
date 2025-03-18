@@ -2,9 +2,8 @@ import React, { useContext, useEffect } from "react";
 import { ThemeContext } from "../context/ThemeContext";  
 import { NavLink } from "react-router-dom";
 import styles from "./Header.module.css";
-import logo from "../../src/assets/images/poliservicios.jpeg";
-//const logo = "/images/poliservicios.jpeg"; // Ruta correcta para imágenes en public/
-const logo = "/images/poliservicios.jpeg";
+
+const logo = "/images/poliservicios.jpeg"; // ✅ Ruta en public/
 
 const Header = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
