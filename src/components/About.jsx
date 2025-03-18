@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./About.module.css";
-import ab1 from "../../src/assets/images/ab1.jpg";
+
+const ab1 = "/images/ab1.jpg"; // Ruta correcta para imágenes en public/
 
 const About = () => {
   return (
