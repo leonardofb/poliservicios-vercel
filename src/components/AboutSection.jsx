@@ -14,7 +14,7 @@ const AboutSection = () => {
                         </div>
                         <div className="col-lg-6 mt-lg-0 mt-md-5 mt-4 align-self ps-lg-5">
                             <div className="title-content text-left">
-                                <h6 className="title-subhny mb-2"><span>Our Story</span></h6>
+                                <h6 className="title-subhny mb-2"><span>Nuestra Historia</span></h6>
                                 <h3 className="title-w3l">Helping business become what they <span className="span-bold">can be</span></h3>
                             </div>
                             <p className="mt-md-4 mt-3">Lorem ipsum viverra feugiat...</p>
