@@ -3,16 +3,16 @@ import styles from './Testimonials.module.css';
 
 const testimonials = [
     {
-        name: "John Wilson",
-        city: "Example City",
-        quote: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.",
-        img: "/images/team1.jpg"
+        name: "Odontologia- Luna Gonzalez",
+        city: "Villeta Cundinamarca",
+        quote: "🦷💻Excelente servicio. Me instalaron de manera profesional toda la red de equipos de cómputo, el panorex, las cámaras de videovigilancia y el sistema de sonido ambiental. Muy cumplidos y atentos a cada detalle.",
+        img: "/images/logo_LGonzalez.jpg"
     },
     {
-        name: "Julia Sakura",
-        city: "Example City",
-        quote: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.",
-        img: "/images/team2.jpg"
+        name: "Cooperativa de Caficultores Coodecafe",
+        city: "San Juan de Rioseco",
+        quote: "🧑‍🌾 Muy buen trabajo. Me instalaron las cámaras pa’ vigilar las bodegas y dejaron todo funcionando bien. Ahora puedo ver todo desde el celular, y quedé tranquilo con la seguridad. Recomendados.",
+        img: "/images/coodecafe.png"
     }
 ];
 
@@ -21,8 +21,8 @@ const Testimonials = () => {
         <section className={styles.testimonialsSection}>
             <div className={styles.testimonialsContainer}>
                 <div className="heading text-center mx-auto">
-                    <h6 className="title-subhny mb-2"><span>Testimonials</span></h6>
-                    <h3 className="title-w3l mb-5">Happy Clients <span className="span-bold">& Feedbacks</span></h3>
+                    <h6 className="title-subhny mb-2"><span>Testimonios</span></h6>
+                    <h3 className="title-w3l mb-5">Clientes satisfechos <span className="span-bold">& opiniones</span></h3>
                 </div>
                 <div className={styles.testimonialWidth}>
                     <div className="row">

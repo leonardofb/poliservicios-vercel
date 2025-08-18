@@ -21,10 +21,11 @@ const Home = () => {
         <Services />
         <Testimonials />
         <TestimonialsSection />
-        <Features />
+       
       </div>
     </div>
   );
 };
 
 export default Home;
+/*<Features />*/

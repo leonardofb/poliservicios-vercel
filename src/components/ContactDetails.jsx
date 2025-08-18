@@ -82,7 +82,7 @@ const ContactDetails = () => {
         </div>
         <div className="contRight">
             <h5>YouTube</h5>
-            <p><a href="https://www.youtube.com/c/tu-canal" target="_blank" rel="noopener noreferrer">Suscríbete a nuestro canal</a></p>
+            <p><a href="https://www.youtube.com/@Poliservicios-Tecnologicos" target="_blank" rel="noopener noreferrer">Suscríbete a nuestro canal</a></p>
         </div>
     </div>
 </div>

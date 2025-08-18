@@ -3,16 +3,16 @@ import styles from './Testimonials.module.css';
 
 const testimonials = [
     {
-        name: "John Wilson",
-        city: "Example City",
-        quote: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.",
-        img: "/images/team1.jpg"
+        name: "La Granja Extrema",
+        city: "Villeta Cundinamarca",
+        quote: "🏞️💪Excelente trabajo. Me instalaron el sistema de cámaras de videovigilancia en toda la granja, hicieron la extensión del internet hasta las zonas de actividad, y le dieron mantenimiento a los brazos electromecánicos de la puerta. Muy cumplidos, todo quedó funcionando perfecto. ¡Recomendados 100%! ✅",
+        img: "/images/logo-granja-extrema.png"
     },
     {
-        name: "Julia Sakura",
-        city: "Example City",
-        quote: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.",
-        img: "/images/team2.jpg"
+        name: "Deposito Jc Garavito",
+        city: "Villeta Cundinamarca",
+        quote: "🛠️📶 Muy buen servicio. Me hicieron una ampliación de la red Wi-Fi a distancia y conectaron las cámaras de videovigilancia en la ferretería. Todo quedó funcionando excelente. ¡Recomendados! 👍",
+        img: "/images/jcgaravito.jpeg"
     }
 ];
 
@@ -21,8 +21,8 @@ const Testimonials = () => {
         <section className={styles.testimonialsSection}>
             <div className={styles.testimonialsContainer}>
                 <div className="heading text-center mx-auto">
-                    <h6 className="title-subhny mb-2"><span>Testimonials</span></h6>
-                    <h3 className="title-w3l mb-5">Happy Clients <span className="span-bold">& Feedbacks</span></h3>
+                    <h6 className="title-subhny mb-2"><span>Testimonios</span></h6>
+                    <h3 className="title-w3l mb-5">Clientes satisfechos <span className="span-bold">& opiniones</span></h3>
                 </div>
                 <div className={styles.testimonialWidth}>
                     <div className="row">

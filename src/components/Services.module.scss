@@ -1,8 +1,33 @@
+/////////////////////Seccion que asegua se eredden colors correctos para en modo darck del texto
 .servicesSection {
-  padding: 80px 15px; /* Agrega un padding a los lados */
+  padding: 80px 15px;
   background-color: #f8f9fa;
+  color: #000;
+
+  h1, h2, h3, h4, h5, h6, p, span, li {
+    color: inherit;
+  }
+
+  a {
+    color: inherit;
+  }
 }
 
+@media (prefers-color-scheme: dark) {
+  .servicesSection {
+    background-color: #111827; // gris oscuro
+    color: #f9fafb;
+
+    h1, h2, h3, h4, h5, h6, p, span, li {
+      color: #f9fafb !important;
+    }
+
+    a {
+      color: #93c5fd; // un azul suave para enlaces
+    }
+  }
+}
+//////////////////////////////////////////////////////
 .servicesContainer {
   max-width: 1200px; /* Limita el ancho máximo para evitar que todo quede pegado */
   margin: 0 auto; /* Centra el contenido */
@@ -27,5 +52,19 @@
   .imageGrid {
       grid-template-columns: 1fr;
       padding: 10px; /* Reduce el padding en móviles */
+  }
+}
+.redTitle {
+  color: #c62828; /* Tu rojo corporativo */
+  font-weight: 800;
+  font-size: 1.5rem; /* text-xl */
+  letter-spacing: 0.02em;
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .redTitle {
+    font-size: 1.875rem; /* text-2xl */
   }
 }

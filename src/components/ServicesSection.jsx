@@ -9,7 +9,7 @@ const ServicesSection = () => {
                     <div className="row cwp23-content mt-lg-5 mt-4">
                         <div className="col-lg-6 cwp23-img">
                             <h6 className="title-subhny mb-2"><span>
-¿Qué hacemos?.</span></h6>
+                            ¿Qué hacemos?.</span></h6>
                             <h3 className="title-w3l mb-4">The service we offer is specifically designed to meet <br />
                                 <span className="span-bold">your needs.</span>
                             </h3>

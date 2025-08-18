@@ -4,16 +4,13 @@ import styles from "./About.module.css";
 
 const ab1 = "/images/ab1.jpg"; // Ruta correcta para imágenes en public/
 
-import React from "react";
-import { Link } from "react-router-dom";
-import styles from "./About.module.css";
 
 // Importa las imágenes que necesites (ajusta las rutas según tu estructura)
-import ab2 from "../assets/images/ab2.jpg";
-import team1 from "../assets/images/team1.jpg";
-import team2 from "../assets/images/team2.jpg";
-import team3 from "../assets/images/team3.jpg";
-import team4 from "../assets/images/team4.jpg";
+import ab2 from "/images/ab2.jpg";
+import team1 from "/images/team1.jpg";
+import team2 from "/images/team2.jpg";
+import team3 from "/images/team3.jpg";
+import team4 from "/images/team4.jpg";
 
 const About = () => {
   return (
@@ -178,11 +175,11 @@ const About = () => {
         <div className="container py-lg-5">
           <div className="w3l-heaser-sec text-center">
             <h6 className="title-subhny mb-2">
-              <span>Passionate team.</span>
+              <span>Un equipo con pasión por la innovación</span>
             </h6>
             <h3 className="title-w3l">
             "Un Equipo{"Un Equipo"}
-              <span className="span-bold">Think Someting.</span>
+              <span className="span-bold">Siempre pensando en cómo la tecnología transforma el futuro</span>
             </h3>
           </div>
           <div className="row team-row mt-md-5 mt-4">
@@ -211,9 +208,9 @@ const About = () => {
                   </div>
                 </div>
                 <Link to="#" className="team-title">
-                  Luke Jacobs
+                  Leonardo Fierro
                 </Link>
-                <p>Founder</p>
+                <p>Fundador</p>
               </div>
             </div>
             <div className="col-lg-3 col-6 team-wrap">
@@ -241,9 +238,9 @@ const About = () => {
                   </div>
                 </div>
                 <Link to="#" className="team-title">
-                  Claire Olson
+                  Yaquelin Cristancho
                 </Link>
-                <p>Manager</p>
+                <p>Tecnico Profesional</p>
               </div>
             </div>
             <div className="col-lg-3 col-6 team-wrap mt-lg-0 mt-5">
@@ -273,7 +270,7 @@ const About = () => {
                 <Link to="#" className="team-title">
                   Phillip Hunt
                 </Link>
-                <p>Advisor</p>
+                <p>Gerente</p>
               </div>
             </div>
             <div className="col-lg-3 col-6 team-wrap mt-lg-0 mt-5">
@@ -319,162 +316,31 @@ const About = () => {
                 <div className="bottom-info">
                   <div className="header-section pr-lg-5">
                     <h3 className="title-w3l two">
-                    Request Free Consultation <br />y {" "}
+                    Solicitar consulta gratuita<br />y {" "}
                       <span className="span-bold">¡Hagámoslo!</span>
                     </h3>
                   </div>
                 </div>
               </div>
               <div className="col-lg-4 w3l-project-left mt-lg-0 mt-4">
-                <Link to="#" className="btn btn-secondary btn-style">
-                  Contactanos Ahora{" "}
-                  <span className="fas fa-angle-double-right ms-2"></span>
-                </Link>
+              <a
+                href="https://wa.me/573102335400" // Reemplaza con tu número
+                className="btn btn-secondary btn-style"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Contáctanos Ahora{" "}
+                <span className="fas fa-angle-double-right ms-2"></span>
+              </a>
+                
+
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      {/* Footer Section */}
-      <footer className="w3l-footer-29-main">
-        <div className="footer-29 py-5">
-          <div className="container py-lg-4">
-            <div className="row align-items-center mb-3">
-              <h2 className="sign-left col-lg-7">
-              Únase a nuestra comunidad utilizando nuestros servicios 
-              y haga crecer su negocio.
-              </h2>
-              <div className="footerw3-btn col-lg-5 ps-lg-5">
-                <Link to="#" className="btn btn-secondary btn-style">
-                Pruébalo gratis{" "}
-                  <span className="fas fa-angle-double-right ms-2"></span>
-                </Link>
-              </div>
-            </div>
-
-            <div className="row footer-top-29 mt-md-5 mt-4">
-              <div className="col-lg-4 col-md-6 footer-list-29 footer-1 pe-lg-5">
-                <h6 className="footer-title-29">A Dónde quiero llegar:</h6>
-                <div className="footer-listw3-grids">
-                  <p className="pe-lg-4">
-                  Mi objetivo a corto plazo es expandir la presencia y reputación de Poliservicios a
-                  nivel regional, centrándome en los municipios aledaños para consolidar nuestra
-                  posición en el mercado local.
-                  </p>
-                  <div className="w3pt-call-box mt-4">
-                    <div className="w3pt-call-info">
-                      <h5>Support</h5>
-                      <h5>
-                        <a href="tel:+1(21) 234 557 456">
-                          <i className="fas fa-phone-alt me-1"></i> +1(57) 310 233 54 00 - 317 536 97 74
-                        </a>
-                      </h5>
-                      <h5>
-                        <a href="tel:+1(21) 234 4568">
-                          <i className="far fa-envelope me-1"></i>
-                          <a href="mailto:support@mail.com" className="mail">
-                            poliservicios2022@mail.com
-                          </a>
-                        </a>
-                      </h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-2 col-md-6 footer-list-29 footer-3 mt-lg-0 mt-5">
-                <h6 className="footer-title-29">Links</h6>
-                <div className="footer-listw3-grids">
-                  <ul className="footer-listw3">
-                    <li>
-                      <Link to="#us">About Us</Link>
-                    </li>
-                    <li>
-                      <Link to="#team">Our Team</Link>
-                    </li>
-                    <li>
-                      <Link to="#pro">Projects</Link>
-                    </li>
-                    <li>
-                      <Link to="#career">Careers</Link>
-                    </li>
-                    <li>
-                      <Link to="#terms">Terms of Use</Link>
-                    </li>
-                    <li>
-                      <Link to="#tips">Privacy Policy</Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="col-lg-2 col-md-6 footer-list-29 footer-3 mt-lg-0 mt-5">
-                <h6 className="footer-title-29">Services</h6>
-                <div className="footer-listw3-grids">
-                  <ul className="footer-listw3">
-                    <li>
-                      <Link to="#lift">Secure services</Link>
-                    </li>
-                    <li>
-                      <Link to="#cardio">Digital arrange</Link>
-                    </li>
-                    <li>
-                      <Link to="#fit">Content strategy</Link>
-                    </li>
-                    <li>
-                      <Link to="#tips">Processing services</Link>
-                    </li>
-                    <li>
-                      <Link to="#tips">Web hosting</Link>
-                    </li>
-                    <li>
-                      <Link to="#tips">Page optimization</Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 footer-list-29 footer-4 mt-lg-0 mt-5 ps-lg-5">
-                <h6 className="footer-title-29">Keep Connected</h6>
-                <p>Get Updates By Subscribe Our Weekly Newsletter</p>
-                <form action="#" className="subscribe" method="post">
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Your Email Address"
-                    required
-                  />
-                  <button>
-                    <span className="fas fa-paper-plane"></span>
-                  </button>
-                </form>
-                <div className="main-social-footer-29 mt-4">
-                  <Link to="#facebook" className="facebook">
-                    <span className="fab fa-facebook-f"></span>
-                  </Link>
-                  <Link to="#twitter" className="twitter">
-                    <span className="fab fa-twitter"></span>
-                  </Link>
-                  <Link to="#instagram" className="instagram">
-                    <span className="fab fa-instagram"></span>
-                  </Link>
-                  <Link to="#linkd" className="linkd">
-                    <span className="fab fa-linkedin-in"></span>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="bottom-copies text-center">
-              <p className="copy-footer-29">
-                © 2021 KoDeal. All rights reserved. Design by{" "}
-                <Link to="https://w3layouts.com/" target="_blank">
-                  W3Layouts y Leonardo Fierro B.
-                </Link>
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 };
-
 export default About;
+
