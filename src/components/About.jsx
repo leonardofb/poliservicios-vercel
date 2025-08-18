@@ -206,18 +206,18 @@ const About = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div>                
                 <Link to="#" className="team-title">
-                  Leonardo Fierro
+                  Yaquelin Cristancho
                 </Link>
-                <p>Fundador</p>
+                <p>Administradora</p>
               </div>
             </div>
-            <div className="col-lg-3 col-6 team-wrap">
-              <div className="team-member text-center">
+            <div className="col-lg-3 col-6 team-wrap mt-lg-0 mt-5">
+              <div className="team-member last text-center">
                 <div className="team-img">
                   <img
-                    src={team3}
+                    src={team2}
                     alt="Team Member"
                     className="radius-image"
                   />
@@ -238,16 +238,16 @@ const About = () => {
                   </div>
                 </div>
                 <Link to="#" className="team-title">
-                  Yaquelin Cristancho
+                  Leonardo Fierro
                 </Link>
                 <p>Tecnico Profesional</p>
               </div>
             </div>
-            <div className="col-lg-3 col-6 team-wrap mt-lg-0 mt-5">
-              <div className="team-member last text-center">
+            <div className="col-lg-3 col-6 team-wrap">
+              <div className="team-member text-center">
                 <div className="team-img">
                   <img
-                    src={team2}
+                    src={team3}
                     alt="Team Member"
                     className="radius-image"
                   />
