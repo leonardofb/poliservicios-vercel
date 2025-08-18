@@ -178,7 +178,7 @@ const About = () => {
               <span>Un equipo con pasión por la innovación</span>
             </h6>
             <h3 className="title-w3l">
-            "Un Equipo{"Un Equipo"}
+            {"Un Equipo "}
               <span className="span-bold">Siempre pensando en cómo la tecnología transforma el futuro</span>
             </h3>
           </div>
