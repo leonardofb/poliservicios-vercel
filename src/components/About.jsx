@@ -177,17 +177,47 @@ const About = () => {
             <h6 className="title-subhny mb-2">
               <span>Un equipo con pasión por la innovación</span>
             </h6>
-            <h3 className="title-w3l">
-            {"Un Equipo "}
-              <span className="span-bold">Siempre pensando en cómo la tecnología transforma el futuro</span>
-            </h3>
+              <h3 className="title-w3l">
+                {"Un Equipo "}
+                  <span className="span-bold">Siempre pensando en cómo la tecnología transforma el futuro</span>
+              </h3>
           </div>
           <div className="row team-row mt-md-5 mt-4">
+                    <div className="col-lg-3 col-6 team-wrap">
+                      <div className="team-member text-center">
+                        <div className="team-img">
+                          <img
+                            src={team1}
+                            alt="Team Member"
+                            className="radius-image"
+                          />
+                          <div className="overlay-team">
+                            <div className="team-details text-center">
+                              <div className="socials mt-20">
+                                <Link to="#facebook">
+                                  <span className="fab fa-facebook-f"></span>
+                                    </Link>
+                                      <Link to="#twitter">
+                                      <span className="fab fa-twitter"></span>
+                                      </Link>
+                                  <Link to="#linkedin">
+                                  <span className="fab fa-linkedin-in"></span>
+                                </Link>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <Link to="#" className="team-title">
+                          Leonardo Fierro
+                        </Link>
+                        <p>Tecnico Profesional</p>
+                      </div>
+                    </div>
             <div className="col-lg-3 col-6 team-wrap">
               <div className="team-member text-center">
                 <div className="team-img">
                   <img
-                    src={team1}
+                    src={team3}
                     alt="Team Member"
                     className="radius-image"
                   />
@@ -206,7 +236,7 @@ const About = () => {
                       </div>
                     </div>
                   </div>
-                </div>                
+                </div>
                 <Link to="#" className="team-title">
                   Yaquelin Cristancho
                 </Link>
@@ -238,42 +268,12 @@ const About = () => {
                   </div>
                 </div>
                 <Link to="#" className="team-title">
-                  Leonardo Fierro
+                  Karen Matinez
                 </Link>
-                <p>Tecnico Profesional</p>
+                <p>Diseñadora Grafica</p>
               </div>
-            </div>
-            <div className="col-lg-3 col-6 team-wrap">
-              <div className="team-member text-center">
-                <div className="team-img">
-                  <img
-                    src={team3}
-                    alt="Team Member"
-                    className="radius-image"
-                  />
-                  <div className="overlay-team">
-                    <div className="team-details text-center">
-                      <div className="socials mt-20">
-                        <Link to="#facebook">
-                          <span className="fab fa-facebook-f"></span>
-                        </Link>
-                        <Link to="#twitter">
-                          <span className="fab fa-twitter"></span>
-                        </Link>
-                        <Link to="#linkedin">
-                          <span className="fab fa-linkedin-in"></span>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <Link to="#" className="team-title">
-                  Phillip Hunt
-                </Link>
-                <p>Gerente</p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-6 team-wrap mt-lg-0 mt-5">
+             </div>
+              <div className="col-lg-3 col-6 team-wrap mt-lg-0 mt-5">
               <div className="team-member last text-center">
                 <div className="team-img">
                   <img
@@ -298,9 +298,9 @@ const About = () => {
                   </div>
                 </div>
                 <Link to="#" className="team-title">
-                  Sara Grande
+                  Cesar Ortiz
                 </Link>
-                <p>HR</p>
+                <p>Vendedor</p>
               </div>
             </div>
           </div>

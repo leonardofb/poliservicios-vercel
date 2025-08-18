@@ -9,8 +9,7 @@ const Footer = () => {
           <div className="container py-lg-4">
             <div className="row align-items-center mb-3">
               <h2 className="sign-left col-lg-7">
-              Únase a nuestra comunidad utilizando nuestros servicios 
-              y haga crecer su negocio..
+              “Únete a nuestra comunidad y haz crecer tu negocio con tecnología.”
               </h2>
               <div className="footerw3-btn col-lg-5 ps-lg-5">
                 <Link to="#" className="btn btn-secondary btn-style">
