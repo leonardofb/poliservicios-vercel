@@ -76,6 +76,12 @@ const Services = () => {
                 <div className={styles.column}>
                   <a href="#"><img src="/images/g5.jpg" alt="" /></a>
                 </div>
+                <div className={styles.column}>
+                  <a href="#"><img src="/images/g6.jpg" alt="" /></a>
+                </div>
+                <div className={styles.column}>
+                  <a href="#"><img src="/images/g7.jpg" alt="" /></a>
+                </div>
               </div>
             </div>
           </div>
