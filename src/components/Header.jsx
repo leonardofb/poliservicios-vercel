@@ -3,7 +3,7 @@ import { ThemeContext } from "../context/ThemeContext";
 import { NavLink } from "react-router-dom";
 import styles from "./Header.module.css";
 
-const logo = "/images/poliservicios.jpeg"; // ✅ Ruta en public/
+const logo = "/images/Logo-poliservicios.jpg"; // ✅ Ruta en public/
 
 const Header = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);

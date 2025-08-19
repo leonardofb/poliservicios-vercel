@@ -15,10 +15,11 @@ const Home = () => {
       <div className={styles.container}>
           
         <MainSlider />
-        <Grids3 />
-        <About />
-        <VideoSection />
+        <About /> 
+        <Features />    
         <Services />
+        <VideoSection />
+        <Grids3 />        
         <Testimonials />
         <TestimonialsSection />
        
